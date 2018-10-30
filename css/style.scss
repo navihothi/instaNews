@@ -1,0 +1,140 @@
+// importing _reset.scss
+@import 'reset';
+
+//background color [black] and font color [white]
+$font_color: #FFF;
+//$font_face: openSans_Light;
+$bkgd_color: #000;
+
+
+
+/**      BODY    **/
+body {
+ background-color: $bkgd_color;
+ color: $font_color;
+ font-family: openSans_Light;
+}
+
+.header_container {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    padding-left: 2em;
+
+    label {
+        color: $font_color;
+        font-family: openSans_Light;
+        display: flex;
+       }
+       
+       #logo-container {
+        display: inline;
+       }
+       
+       #nyt-list {
+        padding: 3em;
+       }
+}
+
+
+.articles {
+ display: grid;
+ width: 100%;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ padding-top: 2%;
+
+ .article_grid_item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    }
+
+.article_grid_item img{ 
+    width: 100%;
+    //height: auto;
+    }
+
+.article_text{
+    background: rgba(0,0,0,0.65);
+    color: $font_color;
+    font-family: openSans_Light;
+    position: absolute;
+    top: 100%;
+    height: 50%;
+    transition: all 1s ease-in-out;
+    line-height: 1.25em;
+}
+
+.article_grid_item:hover .article_text{
+    top: 50%;
+    }
+}
+
+
+.loader-gif {
+    display: none;
+    margin: 0 auto;
+}
+
+#footer {
+    padding-top: 3em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    height: 5vh;
+}
+
+/**     FONT FAMILY     **/
+@font-face {
+    font-family: openSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+   }
+   
+   @font-face {
+    font-family: openSans-BoldItalics;
+    src: url(../fonts/OpenSans-BoldItalic.ttf);
+   }
+   
+   @font-face {
+    font-family: openSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+   }
+   
+   @font-face {
+    font-family: openSans-LightItalics;
+    src: url(../fonts/OpenSans-LightItalic.ttf);
+   }
+
+/* RESPONSIVE WEB DESIGN */
+
+    /* MOBILE */
+@media screen and(max-width: 599px){
+    .header_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .articles {
+      display: block;
+    }
+}
+
+    /* TABLET */
+@media screen and (max-width: 1239px){
+    .header_container {
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .articles {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+       }
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 4% 0;
+        margin: auto;
+      }
+}
+
+
