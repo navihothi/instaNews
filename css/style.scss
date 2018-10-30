@@ -4,29 +4,28 @@
 /**     FONT FAMILY     **/
 @font-face {
     font-family: 'openSans-Bold';
-    src: url(./assets/fonts/OpenSans-Bold.ttf);
+    src: url(../fonts/OpenSans-Bold.ttf);
    }
    
    @font-face {
     font-family: 'openSans-BoldItalics';
-    src: url(./assets/fonts/OpenSans-BoldItalic.ttf);
+    src: url(../fonts/OpenSans-BoldItalic.ttf);
    }
    
    @font-face {
     font-family: 'OpenSans-Light';
-    src: url(./assets/fonts/OpenSans-Light.ttf);
+    src: url(../fonts/OpenSans-Light.ttf);
    }
    
    @font-face {
     font-family: 'openSans-LightItalics';
-    src: url(./assets/fonts/OpenSans-LightItalic.ttf);
+    src: url(../fonts/OpenSans-LightItalic.ttf);
    }
 
 //background color [black] and font color [white]
 $font_color: #FFFFFF;
 //$font_face: 'OpenSans_Light';
 $bkgd_color: #000000;
-
 
 
 /**      BODY    **/
@@ -45,7 +44,7 @@ body {
 
     label {
         color: $font_color;
-        //font-family: $font_face;
+        font-family: 'OpenSans-Light';
         display: flex;
        }
        

@@ -41,11 +41,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/**     FONT FAMILY     **/
+@font-face {
+  font-family: 'openSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+
+@font-face {
+  font-family: 'openSans-BoldItalics';
+  src: url(../fonts/OpenSans-BoldItalic.ttf); }
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+
+@font-face {
+  font-family: 'openSans-LightItalics';
+  src: url(../fonts/OpenSans-LightItalic.ttf); }
+
 /**      BODY    **/
 body {
-  background-color: #000;
-  color: #FFF;
-  font-family: openSans_Light; }
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'OpenSans-Light'; }
 
 .header_container {
   display: flex;
@@ -53,8 +70,8 @@ body {
   align-items: center;
   padding-left: 2em; }
   .header_container label {
-    color: #FFF;
-    font-family: openSans_Light;
+    color: #FFFFFF;
+    font-family: 'OpenSans-Light';
     display: flex; }
   .header_container #logo-container {
     display: inline; }
@@ -75,8 +92,7 @@ body {
     width: 100%; }
   .articles .article_text {
     background: rgba(0, 0, 0, 0.65);
-    color: #FFF;
-    font-family: openSans_Light;
+    color: #FFFFFF;
     position: absolute;
     top: 100%;
     height: 50%;
@@ -94,23 +110,6 @@ body {
   padding-bottom: 1em;
   padding-left: 2em;
   height: 5vh; }
-
-/**     FONT FAMILY     **/
-@font-face {
-  font-family: openSans-Bold;
-  src: url(../fonts/OpenSans-Bold.ttf); }
-
-@font-face {
-  font-family: openSans-BoldItalics;
-  src: url(../fonts/OpenSans-BoldItalic.ttf); }
-
-@font-face {
-  font-family: openSans-Light;
-  src: url(../fonts/OpenSans-Light.ttf); }
-
-@font-face {
-  font-family: openSans-LightItalics;
-  src: url(../fonts/OpenSans-LightItalic.ttf); }
 
 /* RESPONSIVE WEB DESIGN */
 /* MOBILE */

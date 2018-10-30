@@ -24,20 +24,20 @@ gulp.task('message', () => {
 
 //copy all HTML files
 gulp.task('copyHtml', () =>{
-    gulp.src('src/*.html')
+    gulp.src('*.html')
         .pipe(gulp.dest('dist'));
 });
 
 // optimize images
 gulp.task('imageMin', () =>
-	gulp.src('src/assets/images/*')
+	gulp.src('assets/images/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'))
 );
 
 // minify js
 gulp.task('minify', () => {
-    gulp.src('src/javascript/*.js')
+    gulp.src('javascript/*.js')
     .pipe(minify({
         mangle: {
           keepClassName: true
@@ -48,7 +48,7 @@ gulp.task('minify', () => {
 
 // compile sass
 gulp.task('sass', () => {
-    gulp.src('src/css/*.scss')
+    gulp.src('css/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist/css'))
 });
